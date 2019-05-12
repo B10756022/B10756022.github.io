@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minium-scale=0.8, maxium-scale=2.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!--font-family: 'Roboto', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!--font-family: 'Open Sans', sans-serif;-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!--font-family: 'Open Sans', sans-serif;-->
     <title>Yuxuan Yang's Self Introduction</title>
 </head>
 <style>
@@ -27,6 +33,7 @@
         height: 200%;
         position: relative;
         width: 30%;
+        color: darkcyan;
     }
     
     #uniquename {
@@ -49,10 +56,6 @@
         margin: 0% 0.5%;
     }
     
-    .search01 {
-        width: 30000%;
-    }
-    
     .form-control {
         width: 100%;
         display: block;
@@ -62,11 +65,35 @@
     [class~=div-left] {
         position: absolute;
         left: 0px;
+        margin: 0px;
         padding: 0px;
+        width: 100%;
     }
     
     .container-fluid {
-        width: 100%;
+        /**/
+        white-space: nowrap;
+    }
+    
+    .container-fluid input#search {
+        width: 1500px;
+        height: 50px;
+        border: none;
+        font-size: 10pt;
+        float: left;
+        padding-left: 15px;
+    }
+    
+    [class~=icon] {
+        outline: none;
+        opacity: 1;
+        margin-left: -80px;
+        vertical-align: middle;
+        margin-top: 5px;
+    }
+    
+    .nav-link:hover {
+        text-decoration: underline;
     }
 </style>
 
@@ -90,17 +117,16 @@
     </script>
 
     <div class="header">
-
-        <!--<div class="col-md align-items-bottom "></div>-->
         <nav class="navbar navbar-expand-lg navbar-light ">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <a class="navbar-brand" href="#">
                     <h1>Self Introduction</h1>
                 </a>
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav mx-auto">
+                    <!--ml-auto-->
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                     </li>
@@ -115,34 +141,31 @@
                     </li>
                 </ul>
                 <a class="search pull-right" href="javascript:ReverseDisplay('uniquename')">
-                    <button type="submit" class="btn btn-primary">Search</button>
+                    <button type="button" class="btn btn-info">Search</button>
                 </a>
             </div>
-
         </nav>
-        <!--<div class=”clearfix hidden-xs”></div>-->
-    </div>
-    <div class="div-left">
 
-        <div id="uniquename">
-            <form class="form-inline">
-                <div class="container-fluid">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="button-addon2">
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Search</button>
+
+        <div class="div-left">
+            <div id="uniquename">
+                <form action="">
+                    <div class="input-group">
+                        <div class="box">
+                            <div class="container-fluid">
+                                <input type="search" id="search" placeholder="Search..." />
+
+                                <button class="icon btn btn-outline-info"><i class="fa fa-search">Search</i></button>
+                            </div>
                         </div>
                     </div>
-            </form>
+                </form>
             </div>
-
         </div>
-
-        <div class="clear"></div>
-
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
