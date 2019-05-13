@@ -39,6 +39,12 @@
         }
 
         /*叉叉*/
+        $(function() {
+            $('.hamburger').on('click', function() {
+                $(this).toggleClass('active');
+            });
+
+        });
     </script>
 
 
@@ -51,9 +57,15 @@
                 <a class="navbar-brand" href="#">
                     <h1>Self Introduction</h1>
                 </a>
-                <button class="navbar-toggler nav-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" onclick="nav02()">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
+                <div class="box">
+                    <button id="hamburger-1" class="navbar-toggler nav-right hamburger" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" onclick="nav02()">
+                    <!--<span class="navbar-toggler-icon"></span>-->
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </button>
+                </div>
+
                 <div class="nav01 collapse navbar-collapse" id="navbarTogglerDemo01">
 
                     <ul class="navbar-nav mx-auto">
@@ -73,7 +85,7 @@
                         </li>
                     </ul>
                     <a class="search pull-right" href="javascript:ReverseDisplay('uniquename')">
-                        <button type="button" class="btn btn-info">Search</button>
+                        <button id="button01" type="button" class="btn btn-info">Search</button>
                     </a>
                 </div>
             </nav>

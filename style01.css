@@ -98,26 +98,21 @@ h1 {
     float: left;
 }
 
-nav {
-    text-align: center;
-}
-
 
 /**/
 
-
-/*
 #button01 {
     display: table;
     width: auto;
     margin-left: auto;
     margin-right: auto;
 }
-*/
 
 
-/*叉叉*/
+/*選單ICON大小*/
 
+
+/*
 .animated-icon2 {
     height: 30px;
     width: 20px;
@@ -127,4 +122,71 @@ nav {
     width: 3px;
     height: 30px;
     background-color: black;
+}
+*/
+
+.container {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.box {
+    position: relative;
+    width: 10%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin: 0 1%;
+    overflow: hidden;
+}
+
+.box:before {
+    content: " ";
+    display: block;
+    padding-top: 100%;
+}
+
+[class~=hamburger] {
+    width: 40px;
+    cursor: pointer;
+    border: none;
+}
+
+[class~=hamburger] .line {
+    display: block;
+    width: 90%;
+    /*線條長度*/
+    height: 4px;
+    border-radius: 4px;
+    background-color: darkcyan;
+    margin-bottom: 8px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hamburger-1 {
+    width: 90%;
+    margin: 1%;
+}
+
+#hamburger-1.active .line:nth-child(1) {
+    transform: translateY(12px) rotate(45deg);
+}
+
+#hamburger-1.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger-1.active .line:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
+}
+
+nav {
+    height: 70px;
 }
