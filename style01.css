@@ -1,0 +1,81 @@
+[class~=nav-item] a {
+    vertical-align: bottom;
+    height: 100%;
+    text-transform: uppercase;
+}
+
+[class~=nav-item] {
+    line-height: 100%;
+    height: 200%;
+    position: relative;
+    width: 30%;
+}
+
+h1 {
+    position: relative;
+    width: 30%;
+    color: darkcyan;
+}
+
+#uniquename {
+    display: none;
+}
+
+.clear {
+    clear: both;
+}
+
+[class~=form-inline] {
+    margin-left: 10%;
+}
+
+[class~=search] {
+    margin-left: 20%;
+}
+
+[class~=btn-outline-success] {
+    margin: 0% 0.5%;
+}
+
+.form-control {
+    width: 100%;
+    display: block;
+    left: 0;
+}
+
+[class~=div-left] {
+    position: absolute;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.container-fluid {
+    /**/
+    white-space: nowrap;
+}
+
+.container-fluid input#search {
+    width: 1500px;
+    height: 50px;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    padding-left: 15px;
+}
+
+[class~=icon] {
+    outline: none;
+    opacity: 1;
+    margin-left: -80px;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+
+/**/

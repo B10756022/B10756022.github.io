@@ -12,89 +12,11 @@
     <!--font-family: 'Open Sans', sans-serif;-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <!--font-family: 'Open Sans', sans-serif;-->
+    <link rel="stylesheet" href="/style01.css">
     <title>Yuxuan Yang's Self Introduction</title>
 </head>
 <style>
-    [class~=nav-item] a {
-        vertical-align: bottom;
-        height: 100%;
-        text-transform: uppercase;
-    }
-    
-    [class~=nav-item] {
-        line-height: 100%;
-        height: 200%;
-        position: relative;
-        width: 30%;
-    }
-    
-    h1 {
-        line-height: 100%;
-        height: 200%;
-        position: relative;
-        width: 30%;
-        color: darkcyan;
-    }
-    
-    #uniquename {
-        display: none;
-    }
-    
-    .clear {
-        clear: both;
-    }
-    
-    [class~=form-inline] {
-        margin-left: 10%;
-    }
-    
-    [class~=search] {
-        margin-left: 20%;
-    }
-    
-    [class~=btn-outline-success] {
-        margin: 0% 0.5%;
-    }
-    
-    .form-control {
-        width: 100%;
-        display: block;
-        left: 0;
-    }
-    
-    [class~=div-left] {
-        position: absolute;
-        left: 0px;
-        margin: 0px;
-        padding: 0px;
-        width: 100%;
-    }
-    
-    .container-fluid {
-        /**/
-        white-space: nowrap;
-    }
-    
-    .container-fluid input#search {
-        width: 1500px;
-        height: 50px;
-        border: none;
-        font-size: 10pt;
-        float: left;
-        padding-left: 15px;
-    }
-    
-    [class~=icon] {
-        outline: none;
-        opacity: 1;
-        margin-left: -80px;
-        vertical-align: middle;
-        margin-top: 5px;
-    }
-    
-    .nav-link:hover {
-        text-decoration: underline;
-    }
+    @import url(style01.css);
 </style>
 
 <body>
@@ -114,39 +36,51 @@
                 document.getElementById(d).style.display = "none";
             }
         }
+
+        function nav02() {
+            var object = event.srcElement;
+            if () {
+                nav01.style.backgroundColor = "darkcyan";
+            }
+        }
     </script>
 
+
     <div class="header">
-        <nav class="navbar navbar-expand-lg navbar-light ">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+        <div class="nav01">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#">
                     <h1>Self Introduction</h1>
                 </a>
-                <ul class="navbar-nav mx-auto">
-                    <!--ml-auto-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./book.html">Book</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./photo.html">Photo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./drawing.html" tabindex="-1" aria-disabled="true">Drawing</a>
-                    </li>
-                </ul>
-                <a class="search pull-right" href="javascript:ReverseDisplay('uniquename')">
-                    <button type="button" class="btn btn-info">Search</button>
-                </a>
-            </div>
-        </nav>
+                <button class="navbar-toggler nav-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" onclick="nav02()">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
 
+                <div class="nav01 collapse navbar-collapse" id="navbarTogglerDemo01">
+
+                    <ul class="navbar-nav mx-auto">
+                        <!--ml-auto-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./book.html">Book</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./photo.html">Photo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./drawing.html" tabindex="-1" aria-disabled="true">Drawing</a>
+                        </li>
+                    </ul>
+                    <a class="search pull-right" href="javascript:ReverseDisplay('uniquename')">
+                        <button type="button" class="btn btn-info">Search</button>
+                    </a>
+                </div>
+            </nav>
+        </div>
         <div class="div-left">
             <div id="uniquename">
                 <form action="">
