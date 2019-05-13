@@ -61,7 +61,7 @@ h1 {
     white-space: nowrap;
 }
 
-.nav-link:hover {
+li:hover {
     text-decoration: underline;
 }
 
@@ -106,6 +106,7 @@ h1 {
     width: auto;
     margin-left: auto;
     margin-right: auto;
+    background-color: darkcyan;
 }
 
 
@@ -133,7 +134,8 @@ h1 {
 
 .box {
     position: relative;
-    width: 10%;
+    width: 70px;
+    /*線條寬度*/
     background-color: white;
     display: flex;
     justify-content: center;
@@ -170,10 +172,24 @@ h1 {
     margin-right: auto;
 }
 
+
+/*保持寬度*/
+
 #hamburger-1 {
     width: 90%;
     margin: 1%;
 }
+
+
+/*高度維持*/
+
+nav {
+    height: 70px;
+    background-color: white;
+}
+
+
+/**/
 
 #hamburger-1.active .line:nth-child(1) {
     transform: translateY(12px) rotate(45deg);
@@ -185,8 +201,4 @@ h1 {
 
 #hamburger-1.active .line:nth-child(3) {
     transform: translateY(-12px) rotate(-45deg);
-}
-
-nav {
-    height: 70px;
 }
