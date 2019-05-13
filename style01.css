@@ -98,6 +98,10 @@ h1 {
     float: left;
 }
 
+nav {
+    text-align: center;
+}
+
 
 /**/
 
@@ -108,4 +112,19 @@ h1 {
     width: auto;
     margin-left: auto;
     margin-right: auto;
-}*/
+}
+*/
+
+
+/*叉叉*/
+
+.animated-icon2 {
+    height: 30px;
+    width: 20px;
+}
+
+.animated-icon2 span {
+    width: 3px;
+    height: 30px;
+    background-color: black;
+}
