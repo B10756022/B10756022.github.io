@@ -21,6 +21,7 @@
 
 <body>
     <script type="text/javascript" language="JavaScript">
+        /*Search顯示隱藏*/
         function HideContent(d) {
             document.getElementById(d).style.display = "none";
         }
@@ -36,13 +37,7 @@
                 document.getElementById(d).style.display = "none";
             }
         }
-
-        function nav02() {
-            var object = event.srcElement;
-            if () {
-                nav01.style.backgroundColor = "darkcyan";
-            }
-        }
+        /*叉叉*/
     </script>
 
 
@@ -75,27 +70,25 @@
                             <a class="nav-link" href="./drawing.html" tabindex="-1" aria-disabled="true">Drawing</a>
                         </li>
                     </ul>
-                    <a class="search pull-right" href="javascript:ReverseDisplay('uniquename')">
+                    <a id="button01" class="search pull-right" href="javascript:ReverseDisplay('uniquename')">
                         <button type="button" class="btn btn-info">Search</button>
                     </a>
                 </div>
             </nav>
         </div>
-        <div class="div-left">
+        <div class="container-fluid">
             <div id="uniquename">
-                <form action="">
-                    <div class="input-group">
-                        <div class="box">
-                            <div class="container-fluid">
-                                <input type="search" id="search" placeholder="Search..." />
 
-                                <button class="icon btn btn-outline-info"><i class="fa fa-search">Search</i></button>
-                            </div>
-                        </div>
-                    </div>
+                <!--Blogger 站內搜尋-->
+                <form class="site_search" action="/search" method="get" role="search">
+                    <input class="search_input" name="q" placeholder="Search..." type="text" />
+                    <input name="by-date" type="hidden" value="true" />
+                    <input class="search_btn" type="image" src="http://www.shejiye.com/uploadfile/icon/2017/0203/shejiyeiconb5nmeqenuqq.png" />
                 </form>
+                <!--Designed by WFU BLOG-->
             </div>
         </div>
+    </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
