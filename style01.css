@@ -1,20 +1,29 @@
+/*大寫*/
+
 [class~=nav-item] a {
     vertical-align: bottom;
     height: 100%;
     text-transform: uppercase;
 }
 
+
+/*水平置中*/
+
 [class~=nav-item] {
     line-height: 100%;
     height: 200%;
     position: relative;
-    width: 30%;
 }
+
+
+/*字靠左*/
 
 li {
     text-align: left;
-    width: calc(100% - 10px);
 }
+
+
+/*大標*/
 
 h1 {
     position: relative;
@@ -22,9 +31,15 @@ h1 {
     color: darkcyan;
 }
 
+
+/*隱藏*/
+
 #uniquename {
     display: none;
 }
+
+
+/*清除格式*/
 
 .clear {
     clear: both;
@@ -103,7 +118,7 @@ li:hover {
 
 #button01 {
     display: table;
-    width: auto;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-color: darkcyan;
@@ -127,12 +142,11 @@ li:hover {
 */
 
 .container {
-    width: 70%;
     margin: auto;
     text-align: center;
 }
 
-.box {
+[class~=box] {
     position: relative;
     width: 70px;
     /*線條寬度*/
@@ -145,7 +159,7 @@ li:hover {
     overflow: hidden;
 }
 
-.box:before {
+[class~=box]:before {
     content: " ";
     display: block;
     padding-top: 100%;
@@ -176,16 +190,14 @@ li:hover {
 /*保持寬度*/
 
 #hamburger-1 {
-    width: 90%;
+    width: 10%;
+    /*大小*/
     margin: 1%;
 }
 
-
-/*高度維持*/
-
 nav {
-    height: 70px;
-    background-color: white;
+    background-color: rgb(245, 244, 244);
+    /*NAV顏色*/
 }
 
 
@@ -202,3 +214,33 @@ nav {
 #hamburger-1.active .line:nth-child(3) {
     transform: translateY(-12px) rotate(-45deg);
 }
+
+#photo01 {
+    margin-left: -5%;
+}
+
+#back01 {
+    z-index: -1;
+    height: 10%;
+    color: darkcyan;
+    width: 100%;
+}
+
+[class~=row] {
+    z-index: 1;
+}
+
+#activity {
+    background-color: lightblue;
+    height: 300px;
+    margin-left: -30%;
+    margin-bottom: auto;
+    margin-top: -555;
+    padding: 10%;
+    text-align: right;
+    z-index: -5;
+    position: relative;
+}
+
+
+/**/
