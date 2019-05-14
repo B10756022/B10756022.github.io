@@ -215,32 +215,5 @@ nav {
     transform: translateY(-12px) rotate(-45deg);
 }
 
-#photo01 {
-    margin-left: -5%;
-}
-
-#back01 {
-    z-index: -1;
-    height: 10%;
-    color: darkcyan;
-    width: 100%;
-}
-
-[class~=row] {
-    z-index: 1;
-}
-
-#activity {
-    background-color: lightblue;
-    height: 300px;
-    margin-left: -30%;
-    margin-bottom: auto;
-    margin-top: -555;
-    padding: 10%;
-    text-align: right;
-    z-index: -5;
-    position: relative;
-}
-
 
 /**/
