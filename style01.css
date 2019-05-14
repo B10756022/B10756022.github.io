@@ -217,3 +217,47 @@ nav {
 
 
 /**/
+
+
+/*電腦顯示*/
+
+#activity {
+    background-color: darkcyan;
+}
+
+#color01 h2 {
+    color: white;
+    text-align: right;
+    margin-right: 10%;
+}
+
+#color01 hr {
+    width: 90%;
+    right: 10%;
+    margin-left: -40px;
+    text-align: right;
+    background-color: white;
+}
+
+#color02 h2 {
+    color: darkcyan;
+}
+
+#color02 hr {
+    width: 90%;
+    left: 10%;
+    background-color: darkcyan;
+}
+
+#name01 {
+    font-size: 50px;
+}
+
+#color02 p {
+    text-align: right;
+    margin-right: 10%;
+}
+
+#color01 p {
+    color: white;
+}
