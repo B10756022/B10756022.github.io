@@ -229,12 +229,11 @@ nav {
 #color01 h2 {
     color: white;
     text-align: right;
-    margin-right: 10%;
+    margin-right: 1%;
 }
 
 #color01 hr {
     width: 90%;
-    left: 10%;
     background-color: white;
 }
 
@@ -260,6 +259,8 @@ nav {
 
 #color01 p {
     color: white;
+    text-align: left;
+    margin-left: 10%;
 }
 
 #activity {
