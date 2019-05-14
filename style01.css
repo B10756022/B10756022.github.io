@@ -190,7 +190,7 @@ li:hover {
 /*保持寬度*/
 
 #hamburger-1 {
-    width: 10%;
+    width: 60px;
     /*大小*/
     margin: 1%;
 }
@@ -221,8 +221,9 @@ nav {
 
 /*電腦顯示*/
 
-#activity {
-    background-color: darkcyan;
+.row {
+    vertical-align: middle;
+    text-align: center;
 }
 
 #color01 h2 {
@@ -241,6 +242,7 @@ nav {
 
 #color02 h2 {
     color: darkcyan;
+    text-align: left;
 }
 
 #color02 hr {
