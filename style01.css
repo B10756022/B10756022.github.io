@@ -234,9 +234,7 @@ nav {
 
 #color01 hr {
     width: 90%;
-    right: 10%;
-    margin-left: -40px;
-    text-align: right;
+    left: 10%;
     background-color: white;
 }
 
@@ -262,4 +260,8 @@ nav {
 
 #color01 p {
     color: white;
+}
+
+#activity {
+    background-color: darkcyan;
 }
