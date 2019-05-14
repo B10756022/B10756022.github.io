@@ -278,7 +278,7 @@ nav {
 }
 
 #photo02 {
-    margin-top: -3%;
+    margin-top: -2%;
     /*重疊*/
     width: 100%;
     margin-left: 1%;
@@ -286,4 +286,9 @@ nav {
 
 #text01 {
     font-size: 30px;
+}
+
+#activity {
+    height: 50%;
+    /*文字不交疊*/
 }
