@@ -1,0 +1,128 @@
+/*輪播*/
+
+.full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item>a {
+    display: block;
+    height: 100%;
+}
+
+
+/*
+.carousel-item {
+    height: 500px;
+}
+*/
+
+
+/*不固定長寬*/
+
+
+/*
+.carousel-item img {
+    height: 100%;
+    width: auto;
+}
+*/
+
+
+/*保留長寬比*/
+
+
+/*
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    max-height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}*/
+
+
+/*
+.carousel-item img {
+    display: block;
+    width: 100%;
+    height: 500px;
+}*/
+
+h2 {
+    font-size: 300%;
+    color: darkcyan;
+}
+
+.font01 {
+    text-align: left;
+    margin-left: 1%;
+}
+
+.font02 {
+    text-align: right;
+    margin-right: 1%;
+}
+
+img {
+    width: 100%;
+}
+
+.rol {
+    text-align: center;
+}
+
+#draw01 {
+    text-align: left;
+}
+
+#draw02 {
+    text-align: right;
+}
+
+#dcolor01 h2 {
+    background-color: lightgray;
+    text-align: right;
+    /*文字置中*/
+    position: relative;
+    font-size: 250%;
+    line-height: 250%;
+    margin-top: 15%;
+    height: 50%;
+    padding-right: 15%;
+}
+
+#dcolor02 h2 {
+    background-color: lightskyblue;
+    color: white;
+    text-align: left;
+    /*文字置中*/
+    position: relative;
+    font-size: 250%;
+    line-height: 250%;
+    margin-top: 15%;
+    height: 50%;
+    padding-left: 15%;
+}
+
+#dcolor03 h2 {
+    background-color: lightgrey;
+    text-align: right;
+    /*文字置中*/
+    position: relative;
+    font-size: 250%;
+    line-height: 250%;
+    margin-top: 15%;
+    height: 50%;
+    padding-right: 15%;
+}
+
+@media only screen and (min-width: 992px) {
+    .img001 {
+        width: 120%;
+    }
+}

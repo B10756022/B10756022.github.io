@@ -6,6 +6,11 @@
     text-transform: uppercase;
 }
 
+img {
+    text-align: center;
+    vertical-align: middle;
+}
+
 
 /*水平置中*/
 
