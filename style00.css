@@ -200,9 +200,26 @@ li:hover {
     margin: 1%;
 }
 
+#footer,
 nav {
     background-color: rgb(245, 244, 244);
     /*NAV顏色*/
+}
+
+#footer {
+    height: 10%;
+    margin-top: 40%;
+    text-align: center;
+    vertical-align: middle;
+    bottom: 0;
+    position: relative;
+}
+
+#footer p {
+    height: 10%;
+    line-height: 10%;
+    position: relative;
+    padding-top: 1%;
 }
 
 
