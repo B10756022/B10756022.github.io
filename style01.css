@@ -80,7 +80,7 @@
     padding-top: 15%;
 }
 
-#hr01 hr {
+hr {
     background-color: darkcyan;
 }
 
@@ -93,18 +93,25 @@
 #height002,
 #height003,
 #height004,
-#height005 {
+#height005,
+#height006 {
     margin-top: 50%;
 }
 
-@media only screen and (min-width: 768px) {
-    #height001,
-    #height003,
-    #height004 {
-        position: relative;
-    }
+#height002,
+#height005,
+#height006 {
+    width: 90%;
+}
+
+@media only screen and (max-width: 768px) {
     #photo02 {
         height: 75%;
         width: auto;
+    }
+    #hr01 {
+        text-align: center;
+        margin: auto;
+        padding: 1%;
     }
 }
