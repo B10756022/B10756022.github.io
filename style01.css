@@ -90,6 +90,21 @@
 }
 
 #height001,
-#height002 {
-    margin-top: 20%;
+#height002,
+#height003,
+#height004,
+#height005 {
+    margin-top: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+    #height001,
+    #height003,
+    #height004 {
+        position: relative;
+    }
+    #photo02 {
+        height: 75%;
+        width: auto;
+    }
 }
