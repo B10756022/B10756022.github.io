@@ -75,3 +75,21 @@
     height: 50%;
     /*文字不交疊*/
 }
+
+#img101 {
+    padding-top: 15%;
+}
+
+#hr01 hr {
+    background-color: darkcyan;
+}
+
+#hr01 p {
+    background-color: white;
+    font-size: 150%;
+}
+
+#height001,
+#height002 {
+    margin-top: 20%;
+}
