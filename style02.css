@@ -128,4 +128,52 @@ img {
     .img001 {
         width: 120%;
     }
+    #dcolor01 h2 {
+        background-color: lightgray;
+        text-align: right;
+        /*文字置中*/
+        /*保持高度*/
+        position: relative;
+        font-size: 250%;
+        line-height: 250%;
+        margin-top: 15%;
+        height: 15%;
+        padding-right: 15%;
+    }
+    #dcolor02 h2 {
+        background-color: lightskyblue;
+        color: white;
+        text-align: left;
+        /*文字置中*/
+        /*保持高度*/
+        position: relative;
+        font-size: 250%;
+        line-height: 250%;
+        margin-top: 15%;
+        height: 15%;
+        padding-left: 15%;
+    }
+    #dcolor03 h2 {
+        background-color: lightgrey;
+        text-align: right;
+        /*文字置中*/
+        /*保持高度*/
+        position: relative;
+        font-size: 250%;
+        line-height: 250%;
+        margin-top: 15%;
+        height: 15%;
+        padding-right: 15%;
+    }
+}
+
+#dcolor01 p,
+#dcolor03 p {
+    text-align: right;
+    font-size: 150%;
+}
+
+#dcolor02 p {
+    text-align: left;
+    font-size: 150%;
 }
