@@ -171,9 +171,11 @@ img {
 #dcolor03 p {
     text-align: right;
     font-size: 150%;
+    margin-right: 20%;
 }
 
 #dcolor02 p {
     text-align: left;
     font-size: 150%;
+    margin-left: 20%;
 }
