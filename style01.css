@@ -115,3 +115,15 @@ hr {
         padding: 1%;
     }
 }
+
+@media only screen and (min-width: 480px) {
+    #photo02 {
+        height: 75%;
+        width: auto;
+    }
+    #hr01 {
+        text-align: center;
+        margin: auto;
+        padding: 1%;
+    }
+}
