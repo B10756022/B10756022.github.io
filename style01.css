@@ -63,8 +63,9 @@
 #photo02 {
     margin-top: -2%;
     /*重疊*/
-    width: 100%;
+    width: auto;
     margin-left: 1%;
+    height: 75%;
 }
 
 #text01 {
@@ -125,5 +126,19 @@ hr {
         text-align: center;
         margin: auto;
         padding: 1%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #photo02 {
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #photo02 {
+        height: 100%;
+        width: auto;
     }
 }
