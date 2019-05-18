@@ -129,13 +129,6 @@ hr {
     }
 }
 
-@media only screen and (min-width: 992px) {
-    #photo02 {
-        height: 100%;
-        width: auto;
-    }
-}
-
 @media only screen and (min-width: 1200px) {
     #photo02 {
         height: 100%;
