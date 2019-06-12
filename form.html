@@ -68,6 +68,13 @@
                 $('.animated-icon3').toggleClass('open');
             });
         });*/
+        var uuname = $('input[name="Uname"]').val();
+        var uucomment = $('input[name="Ucomment"]').val();
+        var uuemail = $('input[name="Uemail"]').val();
+        var uuphone = $('input[name="Uphone"]').val();
+        var uuitem = $('input[name="Uitem"]').val();
+
+        document.getElementById("test").innerHTML = uuname;
     </script>
 
 
@@ -128,9 +135,9 @@
                 //Designed by WFU BLOG
             </div>
         </div>-->
-
-
-    <form action="./form.php" method="POST" name="form">
+    <!--<iframe src="https://www6.cbox.ws/box/?boxid=826204&boxtag=AWf2TI" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>-->
+    <form name="form" action="" method="get">
+        <!--for:action="" method="POST"-->
         <div id="article" style="background-color: white;  margin-top: 5%; margin-left: 5%; margin-right: 5%;">
             <div class="container">
                 <div id="tag01">
@@ -168,9 +175,9 @@
                                     <div class="form-inline">
                                         <label for="Uitem" class="form-control-lg p-r-1 m-0 p-l-0">Item </label>
                                         <select name="Uitem" class="form-control m-0 p-0" id="sel01">
-                                                <option value="Pingtung" selected>Introduction</option>
-                                                <option value="Kaoshiung">Photo</option>
-                                                <option value="Tainan">Drawing</option>
+                                                <option value="Introduction" selected>Introduction</option>
+                                                <option value="Photo">Photo</option>
+                                                <option value="Drawing">Drawing</option>
                                             </select>
                                     </div>
                                 </div>
