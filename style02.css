@@ -179,3 +179,52 @@ img {
     font-size: 150%;
     margin-left: 20%;
 }
+
+legend {
+    color: darkcyan;
+}
+
+#area01 {
+    width: 100%;
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+    #phone01 {
+        width: 70%;
+    }
+    #sel01 {
+        width: 75%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #sel01 {
+        width: 62%;
+    }
+    #phone01 {
+        width: 58%;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 992px) {
+    #sel01,
+    #phone01 {
+        width: 200%;
+    }
+}
+
+.input02 {
+    color: white;
+    background-color: darkcyan;
+    border: 1px solid darkcyan;
+}
+
+.input02:hover {
+    color: darkcyan;
+    background-color: white;
+}
+
+h3 {
+    text-align: center;
+    color: darkcyan;
+}

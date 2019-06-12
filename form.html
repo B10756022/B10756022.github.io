@@ -46,6 +46,13 @@
 
         });
 
+        function processFormData() {
+            const form = document.forms['form']; // 取得 name 屬性為 form 的表單
+            const name = form.elements.name.value; // 取得 elements 集合中 name 屬性為 name 的值
+            const email = form.elements.email.value; // 取得 elements 集合中 name 屬性為 email 的值
+            alert("你的姓名是 " + name + "\n電子郵件是 " + email);
+        }
+
         /*$(document).ready(function() {
 
             $('.first-button').on('click', function() {
@@ -70,7 +77,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">
-                <h1>Introduction</h1>
+                <h1>Form</h1>
             </a>
             <button id="hamburger-1" class="navbar-toggler nav-right hamburger" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="line"></span>
@@ -122,4 +129,63 @@
             </div>
         </div>-->
 
-    <div id="article">
+
+    <form action="./form.php" method="POST" name="form">
+        <div id="article" style="background-color: white;  margin-top: 5%; margin-left: 5%; margin-right: 5%;">
+            <div class="container">
+                <div id="tag01">
+                    <div class="row">
+                        <div class="col-12 m-r-2">
+                            <legend>feedback</legend>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-inline">
+                                        <label for="Uname" class="lab form-control-lg m-0 p-l-0">Name </label>
+                                        <input type="text" name="Uname" value="name" size="26" maxlength="18" class="form-control m-0 p-0" required="required">
+                                    </div>
+
+                                </div>
+
+
+                                <div class="col-6">
+                                    <div class="form-inline">
+                                        <label for="Uphone" class="lab form-control-lg m-0 p-r-1 p-l-0">phone</label>
+                                        <input type="tel" name="Uphone" maxlength="10" value="0900123456" class="form-control m-0 p-0" required="required" id="phone01">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="form-inline">
+                                        <label for="Uemail" class="form-control-lg p-r-1 m-0 p-l-0">Email </label>
+                                        <input type="email" name="Uemail" value="Email" class="form-control m-0 p-0" size="27">
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <div class="form-inline">
+                                        <label for="Uitem" class="form-control-lg p-r-1 m-0 p-l-0">Item </label>
+                                        <select name="Uitem" class="form-control m-0 p-0" id="sel01">
+                                                <option value="Pingtung" selected>Introduction</option>
+                                                <option value="Kaoshiung">Photo</option>
+                                                <option value="Tainan">Drawing</option>
+                                            </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="col-12">
+                        <legend for="Ucomment">Comment</legend>
+                        <textarea name="Ucomment" id="area01" cols="100" rows="10" required="required"></textarea>
+                    </div>
+                </div>
+                <input type="submit" value="submit" class="btn btn-info input02">
+                <input type="reset" value="reset" class="btn btn-info input02">
+            </div>
+
+        </div>
+    </form>
