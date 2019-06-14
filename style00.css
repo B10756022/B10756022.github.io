@@ -319,13 +319,6 @@ nav {
     transition: max-height 0.5s ease-in-out;
 }
 
-body {
-    font-family: 'Libre Baskerville', serif;
-    font-style: italic;
-    font-size: 30px;
-    text-align: centeR;
-}
-
 a {
     color: inherit;
 }
