@@ -196,6 +196,19 @@ legend {
     #sel01 {
         width: 75%;
     }
+    #book00 {
+        color: white;
+        text-align: center;
+        border-bottom: solid white;
+        border-top: solid white;
+        padding-bottom: 1%;
+        width: 700px;
+        position: relative;
+        margin-left: 18%;
+        margin-top: -30%;
+        z-index: 10;
+        font-size: 500%;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -213,6 +226,54 @@ legend {
     #phoneText,
     {
         width: 200%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    #book00 {
+        color: white;
+        text-align: center;
+        border-bottom: solid white;
+        border-top: solid white;
+        padding-bottom: 1%;
+        width: 700px;
+        position: relative;
+        margin-left: 10%;
+        margin-top: -40%;
+        z-index: 10;
+        font-size: 500%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    #book00 {
+        color: white;
+        text-align: center;
+        border-bottom: solid white;
+        border-top: solid white;
+        padding-bottom: 1%;
+        width: 350px;
+        position: relative;
+        margin-left: 30%;
+        margin-top: -50%;
+        z-index: 10;
+        font-size: 250%;
+    }
+}
+
+@media (min-width: 100px) and (max-width: 599px) {
+    #book00 {
+        color: white;
+        text-align: center;
+        border-bottom: solid white;
+        border-top: solid white;
+        padding-bottom: 1%;
+        width: 350px;
+        position: relative;
+        margin-left: 20%;
+        margin-top: -60%;
+        z-index: 10;
+        font-size: 250%;
     }
 }
 
@@ -242,24 +303,26 @@ h3 {
     margin-top: 20%;
 }
 
-#book00 {
-    color: white;
-    text-align: center;
-    border-bottom: solid white;
-    border-top: solid white;
-    padding-bottom: 1%;
-    width: 700px;
-    position: relative;
-    margin-left: 28%;
-    margin-top: -25%;
-    z-index: 10;
-    font-size: 500%;
+@media (min-width: 1200px) {
+    #book00 {
+        color: white;
+        text-align: center;
+        border-bottom: solid white;
+        border-top: solid white;
+        padding-bottom: 1%;
+        width: 700px;
+        position: relative;
+        margin-left: 28%;
+        margin-top: -25%;
+        z-index: 10;
+        font-size: 500%;
+    }
 }
 
 .image-container {
     background: url(./img/BOOK.jpg) no-repeat;
     height: 600px;
-    width: auto;
+    width: 100%;
     position: relative;
     background-size: cover;
 }
