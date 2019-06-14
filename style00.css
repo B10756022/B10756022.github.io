@@ -246,3 +246,8 @@ nav {
     padding-left: 0;
     padding-right: 0;
 }
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}

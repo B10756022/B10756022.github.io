@@ -235,3 +235,9 @@ h3 {
 .form-group {
     width: 100%;
 }
+
+#draw04,
+#draw05,
+#draw06 {
+    margin-top: 20%;
+}
