@@ -46,13 +46,6 @@
 
         });
 
-        function processFormData() {
-            const form = document.forms['form']; // 取得 name 屬性為 form 的表單
-            const name = form.elements.name.value; // 取得 elements 集合中 name 屬性為 name 的值
-            const email = form.elements.email.value; // 取得 elements 集合中 name 屬性為 email 的值
-            alert("你的姓名是 " + name + "\n電子郵件是 " + email);
-        }
-
         /*$(document).ready(function() {
 
             $('.first-button').on('click', function() {
@@ -68,7 +61,6 @@
                 $('.animated-icon3').toggleClass('open');
             });
         });*/
-
         /*聯絡我們*/
         //宣告預設表單內容為空 （你想要的話也可以加東西）
         var initSubject = '',
@@ -108,10 +100,10 @@
                 <h1>Contact</h1>
             </a>
             <button id="hamburger-1" class="navbar-toggler nav-right hamburger" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="line"></span>
-                                <span class="line"></span>
-                                <span class="line"></span>
-                            </button>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </button>
 
 
             <!--<span class="navbar-toggler-icon"></span>-->
@@ -155,6 +147,7 @@
             </div>
         </nav>
     </div>
+
     <div class="container-fluid">
         <div id="uniquename">
             <!--Blogger 站內搜尋-->
@@ -172,15 +165,14 @@
                 </script>
                 <gcse:search></gcse:search>
                 <!--
-                        <input class="search_input" name="q" placeholder="Search..." type="text" value="" />
-                        <input name="by-date" type="hidden" value="true" />
-                        <input class="search_btn" type="image" src="http://www.shejiye.com/uploadfile/icon/2017/0203/shejiyeiconb5nmeqenuqq.png" />
-                    -->
+                    <input class="search_input" name="q" placeholder="Search..." type="text" value="" />
+                    <input name="by-date" type="hidden" value="true" />
+                    <input class="search_btn" type="image" src="http://www.shejiye.com/uploadfile/icon/2017/0203/shejiyeiconb5nmeqenuqq.png" />
+                -->
             </form>
             <!--Designed by WFU BLOG-->
         </div>
     </div>
-    <!--<iframe src="https://www6.cbox.ws/box/?boxid=826204&boxtag=AWf2TI" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>-->
     <form enctype="text/plain" accept-charset="utf-8">
         <div id="article" style="background-color: white;  margin-top: 5%; margin-left: 5%; margin-right: 5%;">
             <div class="container">
@@ -208,11 +200,9 @@
 
 
 
-
                     <div class="form-group">
                         <input id="subText" class="form-control" type="text" name="Subject" value size="60" aria-invalid="false" placeholder="主旨(subject)" required>
                     </div>
-
 
                     <div class="form-group">
                         <textarea id="bodyText" class="form-control" name="your-message" cols="40" rows="10" aria-required="true" aria-invalid="false" placeholder="你的訊息(Your Message)" required></textarea>
@@ -229,7 +219,20 @@
             </div>
         </div>
     </form>
+
+    <div id="article">
+
+
+
+    </div>
     <div id="footer">
         <p>版型參考：YALE</p>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
+
+</html>
