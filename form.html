@@ -122,6 +122,10 @@
                     </li>
 
                     <li class="nav-item">
+                        <a class="nav-link" href="./book.html">Book</a>
+                    </li>
+
+                    <li class="nav-item">
                         <a class="nav-link" href="./form.html">Contact</a>
                     </li>
                 </ul>
@@ -173,54 +177,55 @@
             <!--Designed by WFU BLOG-->
         </div>
     </div>
-    <form enctype="text/plain" accept-charset="utf-8">
-        <div id="article" style="background-color: white;  margin-top: 5%; margin-left: 5%; margin-right: 5%;">
-            <div class="container">
-                <div id="tag01">
-                    <legend>有任何問題，歡迎來信詢問！</legend>
-                    <div class="row">
-                        <div class="col-4" style="margin: auto;">
-                            <div class="form-group">
-                                <input id="nameText" class="form-control" type="text" name="Name" maxlength="18" value size="26" placeholder="姓名(name)" required>
+    <div id="article">
+        <form enctype="text/plain" accept-charset="utf-8">
+            <div id="article" style="background-color: white;  margin-top: 5%; margin-left: 5%; margin-right: 5%;">
+                <div class="container">
+                    <div id="tag01">
+                        <legend>有任何問題，歡迎來信詢問！</legend>
+                        <div class="row">
+                            <div class="col-4" style="margin: auto;">
+                                <div class="form-group">
+                                    <input id="nameText" class="form-control" type="text" name="Name" maxlength="18" value size="26" placeholder="姓名(name)" required>
+                                </div>
+                            </div>
+                            <div class="col-4" style="margin: auto;">
+                                <div class="form-group">
+                                    <input id="emailText" class="form-control" type="email" name="Email" value size="26" placeholder="Email" required>
+                                </div>
+
+                            </div>
+                            <div class="col-4" style="margin: auto;">
+                                <div class="form-group">
+                                    <input id="telText" class="form-control" type="tel" name="Phone" value size="60" aria-invalid="false" placeholder="電話(phone)" required>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-4" style="margin: auto;">
-                            <div class="form-group">
-                                <input id="emailText" class="form-control" type="email" name="Email" value size="26" placeholder="Email" required>
-                            </div>
 
+
+
+
+                        <div class="form-group">
+                            <input id="subText" class="form-control" type="text" name="Subject" value size="60" aria-invalid="false" placeholder="主旨(subject)" required>
                         </div>
-                        <div class="col-4" style="margin: auto;">
-                            <div class="form-group">
-                                <input id="telText" class="form-control" type="tel" name="Phone" value size="60" aria-invalid="false" placeholder="電話(phone)" required>
-                            </div>
+
+                        <div class="form-group">
+                            <textarea id="bodyText" class="form-control" name="your-message" cols="40" rows="10" aria-required="true" aria-invalid="false" placeholder="你的訊息(Your Message)" required></textarea>
                         </div>
-                    </div>
 
+                        <!-- 傳送按鈕 -->
 
-
-
-                    <div class="form-group">
-                        <input id="subText" class="form-control" type="text" name="Subject" value size="60" aria-invalid="false" placeholder="主旨(subject)" required>
-                    </div>
-
-                    <div class="form-group">
-                        <textarea id="bodyText" class="form-control" name="your-message" cols="40" rows="10" aria-required="true" aria-invalid="false" placeholder="你的訊息(Your Message)" required></textarea>
-                    </div>
-
-                    <!-- 傳送按鈕 -->
-
-                    <div>
-                        <input type="submit" value="send" onclick="submitHandler();" class="btn btn-info input02">
-                        <a id="mailTo"></a>
-                        <input type="reset" value="reset" class="btn btn-info input02">
+                        <div>
+                            <input type="submit" value="send" onclick="submitHandler();" class="btn btn-info input02">
+                            <a id="mailTo"></a>
+                            <input type="reset" value="reset" class="btn btn-info input02">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </form>
+        </form>
 
-    <div id="article">
+
 
 
 

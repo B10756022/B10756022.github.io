@@ -15,13 +15,13 @@
     <link rel="stylesheet" href="/style01.css">
     <link rel="stylesheet" href="/style00.css">
     <link rel="stylesheet" href="/style02.css">
-    <title>Introduction</title>
+    <title>Book</title>
 </head>
 <style>
     @import url(style.css);
 </style>
 
-<body>
+<body onload="init()">
 
     <!--背景-->
     <script type="text/javascript" color="darkcyan" opacity="0.5" count="99" src="https://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.js"></script>
@@ -61,6 +61,33 @@
                 $('.animated-icon3').toggleClass('open');
             });
         });*/
+        /*聯絡我們*/
+        //宣告預設表單內容為空 （你想要的話也可以加東西）
+        var initSubject = '',
+            initBody = '';
+
+        //按下傳送按鈕後執行
+        function submitHandler() {
+            var to = "s95027011@gmail.com"; //寫死的傳送對象 就是公司的信箱 不會顯示在網頁上
+            var name = nameText.value; //讀取ID為 nameTextuser 物件中的值
+            var email = emailText.value;
+            var tel = telText.value;
+            var subject = subText.value;
+            //把user填的資料都塞到 mail body 中
+            var body = "" + bodyText.value + '%0A%0A%0A'; //%0A是換行 換了三行
+            body += "From：" + nameText.value + '%0A';
+            body += "Email：" + emailText.value + '%0A';
+            body += "Tel：" + telText.value;
+            //傳送的主要程式碼
+            mailTo.href = "mailto:" + to + "?subject=" + subject + "&body=" + body;
+            mailTo.click();
+        }
+        //在body onload
+        function init() {
+            subText.value = initSubject;
+            toText.value = initTo;
+            bodyText.value = initBody;
+        }
     </script>
 
 
@@ -70,7 +97,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#">
-                <h1>Introduction</h1>
+                <h1>Book</h1>
             </a>
             <button id="hamburger-1" class="navbar-toggler nav-right hamburger" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="line"></span>
@@ -101,7 +128,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./form.html">Contact</a>
                     </li>
-
                 </ul>
 
 
@@ -152,67 +178,15 @@
         </div>
     </div>
 
-    <div id="article" class="container-fluid">
 
-        <div class="row m-3">
+    <div id="article">
+        <div class="image-container"></div>
 
-            <div id="color02" class="col-sm-12 col-lg-6 justify-content-center align-items-center m-auto order-1">
+        <h2 id="book00">I enjoy reading.</h2>
 
-                <h2>About Me</h2>
-                <hr>
-                <p> <span id="name01">Yang, Yuxuan<br>楊于璇</span><br> 興趣 - 看書、甜點、拍照、畫圖<br> 專長 - 電腦相關技能<br> 活動 - 物聯網研習、英語履歷寫作營等<br></p>
-
-            </div>
-            <div id="photo01" class="col-sm-12 col-lg-6 order-2">
-                <img src="./img/Me_n.jpg" alt="About Me" class="img-fluid">
-            </div>
+        <div class="row">
 
         </div>
-
-        <div id="color01" class="row my-3">
-            <div id="photo02" class="col-sm-12 col-lg-6 order-lg-1 order-2">
-                <img src="./img/英文2.jpg" alt="Activity" id="photo02">
-            </div>
-            <div id="activity" class="col-sm-12 col-lg-4 justify-content-center align-items-center m-auto order-lg-2 order-1">
-
-                <h2>Activity</h2>
-                <hr>
-                <p id="text01">高中 - 英文歌唱比賽</p>
-            </div>
-        </div>
-
-        <div class="row" id="hr01">
-            <div class="col-3 m-lg-5 mx-0 my-3 col-md-4 m-md-0 p-md-0 d-none d-sm-block" id="height001">
-                <img src="./img/mom.jpg" alt="mom">
-            </div>
-            <div class="col-6 mt-5 d-none d-lg-block d-xlnone" id="height002">
-                <h2>My Mom</h2>
-                <hr>
-                <p>辛苦栽培我們的媽媽，當然少不了他的照片。<br> 接下的幾年，依然請多指教啦。
-                </p>
-            </div>
-            <div class="col-6 mt-5 d-none d-lg-block d-xlnone" id="height006">
-                <h2>My Sister</h2>
-                <hr>
-                <p>就讀餐飲科，<br>擅長做甜點卻不給我吃。
-                </p>
-            </div>
-            <div class="col-3 m-lg-5 mx-0 my-3 col-md-4 m-md-0 p-md-0 d-none d-sm-block" id="height003">
-                <img src="./img/sister.jpg" alt="sister">
-            </div>
-            <div class="col-3 m-lg-5 mx-0 my-3 col-md-4 m-md-0 p-md-0 d-none d-sm-block" id="height004">
-                <img src="./img/friend.jpg" alt="friend">
-            </div>
-            <div class="col-6 mt-lg-5 d-none d-lg-block d-xlnone" id="height005">
-                <h2>My Friends</h2>
-                <hr>
-                <p>高中同學，<br>然後只有我一個人自己來南部讀書。
-                    <br>他們全在台北。<br>
-                </p>
-            </div>
-        </div>
-    </div>
-
     </div>
     <div id="footer">
         <p>版型參考：YALE</p>
