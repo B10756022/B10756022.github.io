@@ -184,12 +184,13 @@ legend {
     color: darkcyan;
 }
 
-#area01 {
+#area01,
+#message02 {
     width: 100%;
 }
 
 @media (min-width: 991px) and (max-width: 1199px) {
-    #phone01 {
+    #phoneText {
         width: 70%;
     }
     #sel01 {
@@ -201,14 +202,16 @@ legend {
     #sel01 {
         width: 62%;
     }
-    #phone01 {
+    #phoneText,
+    {
         width: 58%;
     }
 }
 
 @media (min-width: 100px) and (max-width: 992px) {
     #sel01,
-    #phone01 {
+    #phoneText,
+    {
         width: 200%;
     }
 }
@@ -227,4 +230,8 @@ legend {
 h3 {
     text-align: center;
     color: darkcyan;
+}
+
+.form-group {
+    width: 100%;
 }
